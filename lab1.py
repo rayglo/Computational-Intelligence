@@ -2,8 +2,11 @@ import math
 import random
 import numpy as np
 
+#Settings board
 SEED_CONST = 42
 N_CONST = 20
+
+#Constants
 best_weight = math.inf
 best_sol = []
 nodes_visited = 0
