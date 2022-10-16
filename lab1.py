@@ -3,7 +3,7 @@ import random
 import numpy as np
 
 SEED_CONST = 42
-N_CONST = 50
+N_CONST = 20
 best_weight = math.inf
 best_sol = []
 nodes_visited = 0
@@ -83,7 +83,7 @@ def solution_rec(p: list, N, len_arr, act_sol, act_weight, mark, lvl):
 
     #print(h_vec)
 
-    for x in h_vec[:int(N/2)]:
+    for x in h_vec[:int(N*2/3)]:
         i = x[0]
         if mark[i] or act_weight + len_arr[i] > best_weight:
             continue
